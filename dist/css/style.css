@@ -39,9 +39,20 @@ header {
 	grid-template-rows: 35fr 65fr;
 	background-color: #001871;
 }
-
+.masthead{
+	height: 64px;
+}
+img.masthead {
+	height: 48px;
+}
+.masthead ul{
+	display: grid;
+	grid-template-columns: 230px auto 128px;
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
 .masthead-logo {
-	margin-top: 14px;
 	max-width: 196px;
 }
 

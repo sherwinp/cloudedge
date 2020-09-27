@@ -1,6 +1,6 @@
 'use strict';
 export default class Auth{
-static isSignedIn(url = "auth", bearer_code = "code") {
+static isSignedIn(url = "authorize", bearer_code = "code") {
 	var bearer = 'Bearer ' + bearer_code;
 	fetch(url, {
 		method: 'GET',
