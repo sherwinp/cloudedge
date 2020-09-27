@@ -1,0 +1,93 @@
+html {
+	height: 100%;
+	border: 0px;
+	padding: 0px;
+	margin: 0px;
+	font-family: Arial, Helvetica, Lucida Bright, Georgia, sans-serif; 
+	font-size: 11pt; font-style: normal;
+}
+
+ul {
+	list-style: none;	
+}
+
+p.head-title {
+	font-weight: 550;
+    letter-spacing: 0.022em;
+}
+
+body {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	border: 0px;
+	padding: 0px;
+	margin: 0px;	
+	font-family: Arial, Helvetica, Lucida Bright, Georgia, sans-serif; 
+	font-size: 11pt; font-style: normal;
+}
+
+body {
+	display: grid;
+	grid-template-rows: 25fr 50fr 25fr;
+}
+
+header {
+	display: grid;
+	grid-template-rows: 35fr 65fr;
+	background-color: #001871;
+}
+
+.masthead-logo {
+	margin-top: 14px;
+	max-width: 196px;
+}
+
+section.scene-img {
+	background-image: url(/css/lab-scene.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-blend-mode: luminosity;
+}
+
+.bread-crumbs ul{
+	list-style: none;
+	list-style-type: "/";
+}
+.bread-crumbs li{
+	float: left;
+	padding-right: 14px;
+	padding-left: 14px;
+}
+
+main {
+	display: grid;
+}
+
+.item-list {
+	display: grid;
+	grid-template-columns: 230px 220px auto;
+	max-width: 480px;
+}
+
+.providers{
+	min-width: 320px;
+}
+
+footer {
+	display: grid;
+}
+
+.footer-1{
+	background-color: rgb(238, 238, 238);
+}
+
+.footer-2{
+	background-color: #2d2926;
+}
+
+.footer-2 img{
+	padding-top: 40px;
+}

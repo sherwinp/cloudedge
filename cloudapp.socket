@@ -1,0 +1,11 @@
+[Unit]
+Description=HTML Form Post Service
+PartOf=cloudapp.service
+
+[Socket]
+ListenStream=127.0.0.1:8000
+ReusePort = yes
+Service = cloudapp.service
+
+[Install]
+WantedBy=sockets.target

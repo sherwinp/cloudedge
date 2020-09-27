@@ -1,0 +1,16 @@
+[Unit]
+Description=Cloud App UI Service
+After=network.target
+Requires=cloudapp.socket
+
+[Service]
+Type=notify
+Environment=PYTHONUNBUFFERED=1
+WorkingDirectory=/var/lib/cloudapp
+ExecStart=uvicorn --log-level debug --fd 3 app:app 
+NonBlocking=true
+TimeoutStopSec=5
+
+
+[Install]
+WantedBy=multi-user.target
